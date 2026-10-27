@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mnauparis1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Taller Semana 1"
+                FontSize="28"
+                TextColor="Red"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Formulario de inscripción"
+                FontSize="22"
+                TextColor="Blue" />
+
+            <Entry
+                x:Name="txtIdentificacion"
+                Placeholder="Identificación: Cédula/RUC/Pasaporte"
+                Keyboard="Numeric" />
+
+            <Entry
+                x:Name="txtNombres"
+                Placeholder="Nombres" />
+
+            <Entry
+                x:Name="txtApellidos"
+                Placeholder="Apellidos" />
+
+            <Entry
+                x:Name="txtTelefono"
+                Placeholder="Teléfono"
+                Keyboard="Numeric" />
+
+            <Entry
+                x:Name="txtCorreo"
+                Placeholder="Correo electrónico"
+                Keyboard="Email" />
+
+            <Entry
+                x:Name="txtConfirmarCorreo"
+                Placeholder="Confirmar correo electrónico"
+                Keyboard="Email" />
+
+            <Button
+                Text="GUARDAR DATOS"
+                Clicked="BtnGuardar_Clicked" />
+
+            <Label
+                x:Name="lblMensaje"
+                FontSize="16"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
